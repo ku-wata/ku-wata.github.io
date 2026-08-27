@@ -1,0 +1,63 @@
+name: Deploy to GitHub Pages
+
+on:
+  # メインブランチへのプッシュ時に実行
+  push:
+    branches: [ main ]
+  # GitHub Actions タブから手動実行できるようにする
+  workflow_dispatch:
+
+# GitHub Pages へのデプロイに必要な権限を設定
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 進行中のデプロイがある場合は完了を待ち、キューを制御
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+env:
+  BUILD_PATH: "."
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ${{ env.BUILD_PATH }}/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ${{ env.BUILD_PATH }}
+
+      - name: Build with Astro
+        run: npm run build
+        working-directory: ${{ env.BUILD_PATH }}
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.BUILD_PATH }}/dist
+
+  deploy:
+    name: Deploy
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
