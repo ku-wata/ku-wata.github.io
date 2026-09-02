@@ -1,0 +1,120 @@
+---
+import type { Misc } from "../lib/researchmap";
+import { formatPublicationDate, isSelfAuthor } from "../lib/researchmap";
+
+interface Props {
+  misc: Misc[];
+}
+
+const { misc } = Astro.props;
+---
+
+<div class="misc-list">
+  {misc.map((item, index) => (
+    <div class="misc-item">
+      <div class="misc-index">[{misc.length - index}]</div>
+      <div class="misc-body">
+        <div class="misc-title">
+          {item.url ? (
+            <a href={item.url} target="_blank" rel="noopener noreferrer">
+              {item.title}
+            </a>
+          ) : (
+            item.title
+          )}
+        </div>
+
+        <div class="misc-authors">
+          {item.authors.map((author, i) => (
+            <>
+              <span class={isSelfAuthor(author) ? "author-self" : "author"}>
+                {author}
+              </span>
+              {i < item.authors.length - 1 && ", "}
+            </>
+          ))}
+        </div>
+
+        <div class="misc-meta">
+          <span class="misc-venue">{item.publicationName}</span>
+          {item.publicationDate && (
+            <span class="misc-date">({formatPublicationDate(item.publicationDate)})</span>
+          )}
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+  .misc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+    width: 100%;
+  }
+
+  .misc-item {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 0.75rem;
+    align-items: baseline;
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  .misc-index {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-subtle);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.6;
+    user-select: none;
+  }
+
+  .misc-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .misc-title {
+    font-weight: 600;
+    color: var(--color-text-main);
+  }
+
+  .misc-title a {
+    color: var(--color-text-main);
+  }
+
+  .misc-title a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  .misc-authors {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+  }
+
+  .author-self {
+    font-weight: 600;
+    color: var(--color-text-main);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .misc-meta {
+    font-size: 0.85rem;
+    color: var(--color-text-subtle);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.5rem;
+    align-items: center;
+  }
+
+  .misc-venue {
+    color: var(--color-text-muted);
+  }
+</style>

@@ -1,0 +1,52 @@
+---
+interface Props {
+  title: string;
+  enTitle?: string;
+}
+
+const { title, enTitle } = Astro.props;
+---
+
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">
+      {title}
+      {enTitle && <span class="en-title">{enTitle}</span>}
+    </h2>
+  </div>
+  <div class="section-body">
+    <slot />
+  </div>
+</section>
+
+<style>
+  .section {
+    width: 100%;
+  }
+
+  .section-header {
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1.5px solid var(--color-border);
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .en-title {
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: var(--color-text-subtle);
+  }
+
+  .section-body {
+    width: 100%;
+  }
+</style>

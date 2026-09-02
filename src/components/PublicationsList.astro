@@ -1,0 +1,144 @@
+---
+import type { Paper } from "../lib/researchmap";
+import { formatPublicationDate, isSelfAuthor } from "../lib/researchmap";
+
+interface Props {
+  papers: Paper[];
+}
+
+const { papers } = Astro.props;
+---
+
+<div class="papers-list">
+  {papers.map((paper, index) => (
+    <div class="paper-item">
+      <div class="paper-index">[{papers.length - index}]</div>
+      <div class="paper-body">
+        <div class="paper-title">
+          {paper.url ? (
+            <a href={paper.url} target="_blank" rel="noopener noreferrer">
+              {paper.title}
+            </a>
+          ) : (
+            paper.title
+          )}
+        </div>
+
+        <div class="paper-authors">
+          {paper.authors.map((author, i) => (
+            <>
+              <span class={isSelfAuthor(author) ? "author-self" : "author"}>
+                {author}
+              </span>
+              {i < paper.authors.length - 1 && ", "}
+            </>
+          ))}
+        </div>
+
+        <div class="paper-meta">
+          <span class="paper-venue">{paper.publicationName}</span>
+          {paper.volume && <span class="paper-detail">Vol.{paper.volume}</span>}
+          {paper.number && <span class="paper-detail">No.{paper.number}</span>}
+          {paper.startingPage && (
+            <span class="paper-detail">
+              pp.{paper.startingPage}{paper.endingPage ? `-${paper.endingPage}` : ""}
+            </span>
+          )}
+          {paper.publicationDate && (
+            <span class="paper-date">({formatPublicationDate(paper.publicationDate)})</span>
+          )}
+          {paper.refereed && <span class="badge-refereed">[査読あり]</span>}
+          {paper.doi && (
+            <a href={paper.doi} target="_blank" rel="noopener noreferrer" class="link-doi">
+              [DOI ↗]
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+  .papers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+  }
+
+  .paper-item {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 0.75rem;
+    align-items: baseline;
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  .paper-index {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-subtle);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.6;
+    user-select: none;
+  }
+
+  .paper-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .paper-title {
+    font-weight: 600;
+    color: var(--color-text-main);
+  }
+
+  .paper-title a {
+    color: var(--color-text-main);
+  }
+
+  .paper-title a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  .paper-authors {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+  }
+
+  .author-self {
+    font-weight: 600;
+    color: var(--color-text-main);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .paper-meta {
+    font-size: 0.85rem;
+    color: var(--color-text-subtle);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.5rem;
+    align-items: center;
+  }
+
+  .paper-venue {
+    font-style: italic;
+    color: var(--color-text-muted);
+  }
+
+  .badge-refereed {
+    font-size: 0.8rem;
+    color: var(--color-text-subtle);
+  }
+
+  .link-doi {
+    font-size: 0.82rem;
+    color: var(--color-primary);
+  }
+</style>

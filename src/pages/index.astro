@@ -1,337 +1,69 @@
 ---
-// ==========================================
-// 博士学生 個人ウェブサイト (Profile)
-// ご自身の情報に合わせて適宜変更してください。
-// ==========================================
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ProfileCard from "../components/ProfileCard.astro";
+import SectionCard from "../components/SectionCard.astro";
+import HistoryList from "../components/HistoryList.astro";
+import PublicationsList from "../components/PublicationsList.astro";
+import MiscList from "../components/MiscList.astro";
+import SocietiesList from "../components/SocietiesList.astro";
+import { profile } from "../data/profile";
+import { getResearchmapData } from "../lib/researchmap";
 
-const profile = {
-  name: {
-    ja: "桑田 若菜",
-    en: "Wakana Kuwata",
-  },
-  title: "博士後期課程2年 (Ph.D. Student)",
-  affiliation: {
-    ja: "兵庫県立大学 大学院情報科学研究科",
-    en: "Graduate School of Information Science, University of Hyogo",
-  },
-  laboratory: {
-    name: "大島裕明研究室 (Ohshima Lab)",
-    url: "https://ohshimalab.github.io/",
-  },
-  bio: `桑田若菜です。`,
-  avatar: "/profile.jpg", // ご自身の顔写真画像 (例: /profile.jpg) に差し替えてください
-  links: [
-    // { label: "Google Scholar", url: "https://scholar.google.com/" },
-    { label: "ORCID", url: "https://orcid.org/0009-0009-4612-4467" },
-    { label: "researchmap", url: "https://researchmap.jp/wakanakuwata" },
-	{ label: "GitHub", url: "https://github.com/ku-wata" },
-  ],
-};
+const rmData = getResearchmapData();
+
+// 学歴データの変換
+const educationItems = rmData.education.map((edu) => ({
+  from: edu.from,
+  to: edu.to,
+  title: edu.institution,
+  subtitle: [edu.department, edu.course].filter(Boolean).join(" "),
+}));
+
+// 経歴データの変換
+const experienceItems = rmData.researchExperience.map((exp) => ({
+  from: exp.from,
+  to: exp.to,
+  title: [exp.affiliation, exp.section].filter(Boolean).join(" "),
+  subtitle: exp.job,
+}));
 ---
 
-<!doctype html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{profile.name.ja} ({profile.name.en}) | Profile</title>
-    <meta
-      name="description"
-      content={`${profile.name.ja} (${profile.name.en}) - ${profile.affiliation.ja} ${profile.title} の個人サイトです。`}
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<BaseLayout profile={profile}>
+  {/* 基本情報 プロフィール */}
+  <ProfileCard profile={profile} degree={rmData.degree} />
 
-  <body>
-    <header class="header">
-      <div class="header-inner">
-        <a href="/" class="logo">
-          <span class="logo-name">{profile.name.en}</span>
-        </a>
-      </div>
-    </header>
+  {/* 学歴 */}
+  {educationItems.length > 0 && (
+    <SectionCard title="学歴" enTitle="Education">
+      <HistoryList items={educationItems} />
+    </SectionCard>
+  )}
 
-    <main class="main-container">
-      <section class="profile-card">
-        <div class="profile-avatar-container">
-          <img src={profile.avatar} alt={profile.name.en} class="profile-avatar" />
-        </div>
-        <div class="profile-content">
-          <div class="profile-header">
-            <h1 class="profile-name">
-              {profile.name.ja}
-              <span class="name-en">/ {profile.name.en}</span>
-            </h1>
-            <p class="profile-title">{profile.title}</p>
-          </div>
+  {/* 経歴 */}
+  {experienceItems.length > 0 && (
+    <SectionCard title="経歴" enTitle="Experience">
+      <HistoryList items={experienceItems} />
+    </SectionCard>
+  )}
 
-          <div class="profile-affiliations">
-            <p class="affil-main">{profile.affiliation.ja}</p>
-            <p class="affil-en">{profile.affiliation.en}</p>
-            <p class="affil-sub">
-              研究室: <a href={profile.laboratory.url} target="_blank" rel="noopener noreferrer">{profile.laboratory.name}</a>
-              <span class="separator">|</span>
-			</p>
-            {profile.status && <p class="status-badge">{profile.status}</p>}
-          </div>
+  {/* 論文 */}
+  {rmData.papers.length > 0 && (
+    <SectionCard title="論文" enTitle="Publications">
+      <PublicationsList papers={rmData.papers} />
+    </SectionCard>
+  )}
 
-          <p class="profile-bio">{profile.bio}</p>
+  {/* MISC */}
+  {rmData.misc.length > 0 && (
+    <SectionCard title="MISC / 発表" enTitle="MISC & Presentations">
+      <MiscList misc={rmData.misc} />
+    </SectionCard>
+  )}
 
-          <div class="profile-links">
-            {profile.links.map((link) => (
-              <a href={link.url} target="_blank" rel="noopener noreferrer" class="link-btn">
-                <span>{link.label}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        <p>© {new Date().getFullYear()} {profile.name.en} ({profile.name.ja}). All Rights Reserved.</p>
-        <p class="footer-sub">Powered by Astro</p>
-      </div>
-    </footer>
-  </body>
-</html>
-
-<style>
-  :root {
-    --color-bg: #f8fafc;
-    --color-card-bg: #ffffff;
-    --color-text-main: #0f172a;
-    --color-text-muted: #475569;
-    --color-text-subtle: #64748b;
-    --color-primary: #1e40af;
-    --color-primary-light: #eff6ff;
-    --color-primary-hover: #1d4ed8;
-    --color-border: #e2e8f0;
-    --color-badge-bg: #f1f5f9;
-    --font-family: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    --max-width: 800px;
-    --border-radius: 12px;
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --color-bg: #0f172a;
-      --color-card-bg: #1e293b;
-      --color-text-main: #f8fafc;
-      --color-text-muted: #cbd5e1;
-      --color-text-subtle: #94a3b8;
-      --color-primary: #60a5fa;
-      --color-primary-light: #1e3a8a33;
-      --color-primary-hover: #93c5fd;
-      --color-border: #334155;
-      --color-badge-bg: #334155;
-      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-    }
-  }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  html {
-    font-family: var(--font-family);
-    background-color: var(--color-bg);
-    color: var(--color-text-main);
-    line-height: 1.65;
-  }
-
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  a {
-    color: var(--color-primary);
-    text-decoration: none;
-    transition: color 0.15s ease;
-  }
-
-  a:hover {
-    color: var(--color-primary-hover);
-    text-decoration: underline;
-  }
-
-  /* Header */
-  .header {
-    background: var(--color-card-bg);
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  .header-inner {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 1rem 1.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo-name {
-    font-weight: 700;
-    font-size: 1.15rem;
-    color: var(--color-text-main);
-  }
-
-  /* Main Container */
-  .main-container {
-    max-width: var(--max-width);
-    width: 100%;
-    margin: 0 auto;
-    padding: 3rem 1.25rem;
-    flex: 1;
-    display: flex;
-    align-items: center;
-  }
-
-  /* Profile Card */
-  .profile-card {
-    width: 100%;
-    display: flex;
-    gap: 2.25rem;
-    align-items: flex-start;
-    padding: 2.5rem;
-    background: var(--color-card-bg);
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-sm);
-  }
-
-  @media (max-width: 680px) {
-    .profile-card {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 1.75rem;
-      gap: 1.5rem;
-    }
-  }
-
-  .profile-avatar-container {
-    flex-shrink: 0;
-  }
-
-  .profile-avatar {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--color-border);
-    background-color: var(--color-badge-bg);
-  }
-
-  .profile-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.9rem;
-    flex: 1;
-  }
-
-  .profile-name {
-    font-size: 1.85rem;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-
-  .name-en {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--color-text-subtle);
-    margin-left: 0.35rem;
-  }
-
-  .profile-title {
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--color-primary);
-    margin-top: 0.25rem;
-  }
-
-  .profile-affiliations {
-    font-size: 0.95rem;
-    color: var(--color-text-muted);
-  }
-
-  .affil-main { font-weight: 500; }
-  .affil-en { font-size: 0.85rem; color: var(--color-text-subtle); }
-  .affil-sub { font-size: 0.88rem; margin-top: 0.25rem; }
-  .separator { margin: 0 0.4rem; color: var(--color-border); }
-
-  .status-badge {
-    display: inline-block;
-    background-color: var(--color-primary-light);
-    color: var(--color-primary);
-    padding: 0.2rem 0.6rem;
-    border-radius: 6px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-top: 0.5rem;
-  }
-
-  .profile-bio {
-    font-size: 0.95rem;
-    color: var(--color-text-muted);
-    line-height: 1.65;
-  }
-
-  .profile-links {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-
-  @media (max-width: 680px) {
-    .profile-links { justify-content: center; }
-  }
-
-  .link-btn {
-    display: inline-flex;
-    align-items: center;
-    background: var(--color-badge-bg);
-    color: var(--color-text-main);
-    padding: 0.4rem 0.85rem;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    border: 1px solid var(--color-border);
-    transition: all 0.15s ease;
-  }
-
-  .link-btn:hover {
-    background: var(--color-primary-light);
-    color: var(--color-primary);
-    border-color: var(--color-primary);
-    text-decoration: none;
-  }
-
-  /* Footer */
-  .footer {
-    margin-top: auto;
-    background: var(--color-card-bg);
-    border-top: 1px solid var(--color-border);
-    padding: 1.5rem 1.25rem;
-    text-align: center;
-    font-size: 0.85rem;
-    color: var(--color-text-subtle);
-  }
-
-  .footer-sub {
-    font-size: 0.78rem;
-    margin-top: 0.25rem;
-  }
-</style>
+  {/* 所属学協会 */}
+  {rmData.societies.length > 0 && (
+    <SectionCard title="所属学協会" enTitle="Affiliated Societies">
+      <SocietiesList societies={rmData.societies} />
+    </SectionCard>
+  )}
+</BaseLayout>

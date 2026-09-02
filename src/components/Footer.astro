@@ -1,0 +1,31 @@
+---
+interface Props {
+  nameJa: string;
+  nameEn: string;
+}
+
+const { nameJa, nameEn } = Astro.props;
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p>© {currentYear} {nameEn} ({nameJa}). All Rights Reserved.</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    margin-top: auto;
+    border-top: 1px solid var(--color-border);
+    padding: 3rem 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--color-text-subtle);
+  }
+
+  .footer-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+</style>

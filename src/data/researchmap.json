@@ -1,0 +1,1593 @@
+{
+    "@context": "https://api.researchmap.jp/researcher.jsonld",
+    "@id": "https://api.researchmap.jp/wakanakuwata?format=json",
+    "@type": "researchers",
+    "rm:user_id": "R000066160",
+    "rm:creator_id": "R000066160",
+    "rm:creator_type": "myself",
+    "rm:created": "2024-04-08T08:28:12Z",
+    "rm:modifier_id": "R000066160",
+    "rm:modifier_type": "myself",
+    "rm:modified": "2026-08-06T04:48:38Z",
+    "permalink": "wakanakuwata",
+    "family_name": {
+        "ja": "桑田",
+        "ja-Kana": "クワタ",
+        "en": "Kuwata"
+    },
+    "given_name": {
+        "ja": "若菜",
+        "ja-Kana": "ワカナ",
+        "en": "Wakana"
+    },
+    "display_name_kana": "disclosed",
+    "display_nickname": "disclosed",
+    "display_image": "disclosed",
+    "display_contact_point": "disclosed",
+    "affiliations": [
+        {
+            "affiliation": {
+                "ja": "兵庫県立大学",
+                "en": "University of Hyogo"
+            },
+            "section": {
+                "ja": "大学院 情報科学研究科",
+                "en": "Graduate School of Information Science"
+            },
+            "job": {
+                "ja": "博士後期課程"
+            },
+            "display_affiliation": "disclosed",
+            "display_job": "disclosed",
+            "rm:institution_code": "1500000000"
+        }
+    ],
+    "degrees": [
+        {
+            "degree": {
+                "ja": "修士（情報科学）"
+            },
+            "degree_institution": {
+                "ja": "兵庫県立大学"
+            },
+            "degree_date": "2025-03",
+            "display_degree": "disclosed",
+            "rm:institution_code": "1500000000"
+        }
+    ],
+    "display_profile": "disclosed",
+    "display_url": "disclosed",
+    "identifiers": {
+        "orc_id": [
+            "0009-0009-4612-4467"
+        ],
+        "j_global_id": [
+            "202501011120061610"
+        ]
+    },
+    "rm:erad_id_verified": false,
+    "rm:orc_id_verified": true,
+    "display_erad_id": "closed",
+    "display_orc_id": "disclosed",
+    "display_researcher_id": "disclosed",
+    "display_j_global_id": "disclosed",
+    "see_also": [
+        {
+            "label": "orcid",
+            "@id": "https://orcid.org/0009-0009-4612-4467"
+        },
+        {
+            "label": "j_global",
+            "@id": "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202501011120061610"
+        }
+    ],
+    "@graph": [
+        {
+            "@id": "https://api.researchmap.jp/wakanakuwata/research_experience",
+            "@type": "research_experience",
+            "@reverse": "https://api.researchmap.jp/wakanakuwata",
+            "total_items": 1,
+            "items": [
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/research_experience/49517096",
+                    "@type": "research_experience",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/research_experience",
+                    "rm:id": "49517096",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-03-23T05:23:10Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-03-23T05:25:05Z",
+                    "from_date": "2023-05",
+                    "to_date": "9999",
+                    "rm:institution_code": "A158002013",
+                    "affiliation": {
+                        "ja": "国立情報学研究所",
+                        "en": "National Institute of Informatics"
+                    },
+                    "section": {
+                        "ja": "情報社会相関研究系"
+                    },
+                    "job": {
+                        "ja": "リサーチ・アシスタント"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/wakanakuwata/education",
+            "@type": "education",
+            "@reverse": "https://api.researchmap.jp/wakanakuwata",
+            "total_items": 3,
+            "items": [
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/education/49557257",
+                    "@type": "education",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/education",
+                    "rm:id": "49557257",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-03-26T08:58:43Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-04-01T08:47:25Z",
+                    "from_date": "2025-04",
+                    "to_date": "9999",
+                    "rm:institution_code": "1500000000",
+                    "affiliation": {
+                        "ja": "兵庫県立大学"
+                    },
+                    "department": {
+                        "ja": "大学院情報科学研究科"
+                    },
+                    "course": {
+                        "ja": "データ計算科学専攻 博士後期課程"
+                    }
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/education/46082812",
+                    "@type": "education",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/education",
+                    "rm:id": "46082812",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2024-04-08T15:47:28Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-03-26T08:58:04Z",
+                    "from_date": "2023-04",
+                    "to_date": "2025-03",
+                    "rm:institution_code": "1500000000",
+                    "affiliation": {
+                        "ja": "兵庫県立大学",
+                        "en": "University of Hyogo"
+                    },
+                    "department": {
+                        "ja": "大学院情報科学研究科",
+                        "en": "Graduate School of Information Science"
+                    },
+                    "course": {
+                        "ja": "データ計算科学専攻 博士前期課程"
+                    },
+                    "address_country": "JPN"
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/education/46082816",
+                    "@type": "education",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/education",
+                    "rm:id": "46082816",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2024-04-08T15:49:20Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2024-04-08T15:49:20Z",
+                    "from_date": "2019-04",
+                    "to_date": "2023-03",
+                    "rm:institution_code": "1500000000",
+                    "affiliation": {
+                        "ja": "兵庫県立大学",
+                        "en": "University of Hyogo"
+                    },
+                    "department": {
+                        "ja": "社会情報科学部",
+                        "en": "School of Social Information Science"
+                    },
+                    "course": {
+                        "ja": "社会情報科学科"
+                    },
+                    "address_country": "JPN"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/wakanakuwata/committee_memberships",
+            "@type": "committee_memberships",
+            "@reverse": "https://api.researchmap.jp/wakanakuwata",
+            "total_items": 1,
+            "items": [
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/committee_memberships/49612135",
+                    "@type": "committee_memberships",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/committee_memberships",
+                    "rm:id": "49612135",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-03-31T06:06:35Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-10-05T09:31:49Z",
+                    "from_date": "2024-07",
+                    "to_date": "9999",
+                    "committee_name": {
+                        "ja": "DBSJ学生企画 学生委員"
+                    },
+                    "association": {
+                        "ja": "日本データベース学会"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/wakanakuwata/awards",
+            "@type": "awards",
+            "@reverse": "https://api.researchmap.jp/wakanakuwata",
+            "total_items": 5,
+            "items": [
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/awards/53044059",
+                    "@type": "awards",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/awards",
+                    "rm:id": "53044059",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2026-03-24T08:05:29Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2026-03-24T08:05:29Z",
+                    "award_name": {
+                        "ja": "上河賞"
+                    },
+                    "winners": {
+                        "ja": [
+                            {
+                                "name": "桑田 若菜"
+                            }
+                        ]
+                    },
+                    "award_title": {
+                        "ja": "日本語手書き文字生成モデルの提案と自動評価による高品質文字選択"
+                    },
+                    "award_date": "2026-03"
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/awards/50202807",
+                    "@type": "awards",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/awards",
+                    "rm:id": "50202807",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-05-20T08:53:12Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-05-21T05:42:51Z",
+                    "award_name": {
+                        "ja": "優秀インタラクティブ賞"
+                    },
+                    "winners": {
+                        "ja": [
+                            {
+                                "name": "桑田 若菜"
+                            },
+                            {
+                                "name": "三林 亮太"
+                            },
+                            {
+                                "name": "谷 雅德"
+                            },
+                            {
+                                "name": "大島 裕明"
+                            }
+                        ]
+                    },
+                    "award_title": {
+                        "ja": "Diffusionモデルによる文字種とスタイルの特徴を利用した日本語手書き文字生成"
+                    },
+                    "association": {
+                        "ja": "第17回データ工学と情報マネジメントに関するフォーラム(DEIM2025)"
+                    },
+                    "award_date": "2025-05"
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/awards/49332422",
+                    "@type": "awards",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/awards",
+                    "rm:id": "49332422",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-03-05T03:18:55Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-03-05T03:18:55Z",
+                    "award_name": {
+                        "ja": "学生プレゼンテーション賞"
+                    },
+                    "winners": {
+                        "ja": [
+                            {
+                                "name": "桑田 若菜"
+                            }
+                        ]
+                    },
+                    "award_title": {
+                        "ja": "Diffusionモデルによる文字種とスタイルの特徴を利用した日本語手書き文字生成"
+                    },
+                    "association": {
+                        "ja": "第17回データ工学と情報マネジメントに関するフォーラム(DEIM2025)"
+                    },
+                    "award_date": "2025-03"
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/awards/46082820",
+                    "@type": "awards",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/awards",
+                    "rm:id": "46082820",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2024-04-08T15:51:01Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2024-04-08T15:51:01Z",
+                    "award_name": {
+                        "ja": "学生プレゼンテーション賞"
+                    },
+                    "winners": {
+                        "ja": [
+                            {
+                                "name": "桑田 若菜"
+                            }
+                        ]
+                    },
+                    "award_title": {
+                        "ja": "深層距離学習による文字種とスタイルの特徴獲得とその特徴に基づく文字生成"
+                    },
+                    "association": {
+                        "ja": "第16回データ工学と情報マネジメントに関するフォーラム(DEIM2024)"
+                    },
+                    "award_date": "2024-03"
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/awards/46082824",
+                    "@type": "awards",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/awards",
+                    "rm:id": "46082824",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2024-04-08T15:52:48Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2024-04-08T15:52:48Z",
+                    "award_name": {
+                        "ja": "学生プレゼンテーション賞"
+                    },
+                    "winners": {
+                        "ja": [
+                            {
+                                "name": "桑田 若菜"
+                            }
+                        ]
+                    },
+                    "award_title": {
+                        "ja": "文字種とスタイルを考慮した文字生成による書家俵越山の模倣"
+                    },
+                    "association": {
+                        "ja": "第15回データ工学と情報マネジメントに関するフォーラム(DEIM2023)"
+                    },
+                    "award_date": "2023-03"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/wakanakuwata/published_papers",
+            "@type": "published_papers",
+            "@reverse": "https://api.researchmap.jp/wakanakuwata",
+            "total_items": 9,
+            "items": [
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/published_papers/54538845",
+                    "@type": "published_papers",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/published_papers",
+                    "rm:id": "54538845",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2026-08-02T08:29:39Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2026-08-02T08:29:39Z",
+                    "paper_title": {
+                        "en": "Analyzing Atypical Local Features in Museum Artifacts using Generative Image Inpainting"
+                    },
+                    "authors": {
+                        "en": [
+                            {
+                                "name": "Maho Kinoshita"
+                            },
+                            {
+                                "name": "Wakana Kuwata"
+                            },
+                            {
+                                "name": "Ryota Mibayashi"
+                            },
+                            {
+                                "name": "Hiroaki Ohshima"
+                            }
+                        ]
+                    },
+                    "publication_date": "2026-10",
+                    "publication_name": {
+                        "en": "Proceedings of the 13th International Conference on Behavioural and Social Computing (BESC 2026) (to appear)"
+                    },
+                    "referee": true,
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/published_papers/54538840",
+                    "@type": "published_papers",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/published_papers",
+                    "rm:id": "54538840",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2026-08-02T08:28:39Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2026-08-02T08:28:39Z",
+                    "paper_title": {
+                        "en": "Japanese Handwriting Generation Based on Human Preference Feedback Using Direct Preference Optimization"
+                    },
+                    "authors": {
+                        "en": [
+                            {
+                                "name": "Wakana Kuwata"
+                            },
+                            {
+                                "name": "Ryota Mibayashi"
+                            },
+                            {
+                                "name": "Tani Masanori"
+                            },
+                            {
+                                "name": "Hiroaki Ohshima"
+                            }
+                        ]
+                    },
+                    "published_paper_owner_roles": [
+                        "lead"
+                    ],
+                    "publication_date": "2026-10",
+                    "publication_name": {
+                        "en": "Proceedings of the 13th International Conference on Behavioural and Social Computing (BESC 2026) (to appear)"
+                    },
+                    "referee": true,
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/published_papers/51966151",
+                    "@type": "published_papers",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/published_papers",
+                    "rm:id": "51966151",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-12-31T09:58:48Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2026-04-22T05:31:32Z",
+                    "paper_title": {
+                        "ja": "日本語手書き文字生成モデルの提案と自動評価による高品質文字選択"
+                    },
+                    "authors": {
+                        "ja": [
+                            {
+                                "name": "桑田 若菜"
+                            },
+                            {
+                                "name": "三林 亮太"
+                            },
+                            {
+                                "name": "谷 雅德"
+                            },
+                            {
+                                "name": "大島 裕明"
+                            }
+                        ]
+                    },
+                    "published_paper_owner_roles": [
+                        "lead"
+                    ],
+                    "publication_date": "2026-04",
+                    "publication_name": {
+                        "ja": "情報処理学会論文誌：データベース（TOD）"
+                    },
+                    "volume": "19",
+                    "number": "2",
+                    "starting_page": "27",
+                    "ending_page": "40",
+                    "referee": true,
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/published_papers/51551160",
+                    "@type": "published_papers",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/published_papers",
+                    "rm:id": "51551160",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-10-28T14:43:58Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2026-01-19T10:04:46Z",
+                    "paper_title": {
+                        "en": "Accident Severity Prediction Using Multi-Zoom-Level Map Images"
+                    },
+                    "authors": {
+                        "en": [
+                            {
+                                "name": "Hiroki Naito"
+                            },
+                            {
+                                "name": "Yuki Nakanishi"
+                            },
+                            {
+                                "name": "Wakana Kuwata"
+                            },
+                            {
+                                "name": "Huu-Long Pham"
+                            },
+                            {
+                                "name": "Tomoya Hashiguchi"
+                            },
+                            {
+                                "name": "Hiroaki Ohshima"
+                            }
+                        ]
+                    },
+                    "publication_date": "2026-01",
+                    "publication_name": {
+                        "en": "Proceedings of the 14th International Conference on Software and Information Engineering (ICSIE 2026)"
+                    },
+                    "referee": true,
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/published_papers/51155701",
+                    "@type": "published_papers",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/published_papers",
+                    "rm:id": "51155701",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-09-14T03:43:47Z",
+                    "rm:modifier_id": "external:ORCID",
+                    "rm:modifier_type": "trusted_institution",
+                    "rm:modified": "2026-01-20T03:14:25Z",
+                    "paper_title": {
+                        "en": "Measuring Shape Unexpectedness of Exhibits Based on Similarity and Outlier Detection"
+                    },
+                    "authors": {
+                        "en": [
+                            {
+                                "name": "Maho Kinoshita"
+                            },
+                            {
+                                "name": "Wakana Kuwata"
+                            },
+                            {
+                                "name": "Hiroaki Ohshima"
+                            }
+                        ]
+                    },
+                    "publication_date": "2026",
+                    "publication_name": {
+                        "en": "Proceedings of the 27th International Conference on Information Integration and Web Intelligence (iiWAS 2025)"
+                    },
+                    "starting_page": "383",
+                    "ending_page": "389",
+                    "referee": true,
+                    "rm:is_open_access": false,
+                    "identifiers": {
+                        "doi": [
+                            "10.1007/978-3-032-11976-6_29"
+                        ],
+                        "orcid_put_cd": [
+                            "202728101"
+                        ]
+                    },
+                    "see_also": [
+                        {
+                            "label": "doi",
+                            "@id": "https://doi.org/10.1007/978-3-032-11976-6_29",
+                            "is_downloadable": false
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/published_papers/51155681",
+                    "@type": "published_papers",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/published_papers",
+                    "rm:id": "51155681",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-09-14T03:38:43Z",
+                    "rm:modifier_id": "external:ORCID",
+                    "rm:modifier_type": "trusted_institution",
+                    "rm:modified": "2026-01-20T03:14:25Z",
+                    "paper_title": {
+                        "en": "Lyric-Aware DJ Track Recommendation Based on Semantic Relationships"
+                    },
+                    "authors": {
+                        "en": [
+                            {
+                                "name": "Wakana Kuwata"
+                            },
+                            {
+                                "name": "Hiroaki Ohshima"
+                            }
+                        ]
+                    },
+                    "published_paper_owner_roles": [
+                        "lead"
+                    ],
+                    "publication_date": "2026",
+                    "publication_name": {
+                        "en": "Proceedings of the 23rd International Conference on Advances in Mobile Computing & Multimedia Intelligence (MoMM 2025)"
+                    },
+                    "starting_page": "189",
+                    "ending_page": "195",
+                    "referee": true,
+                    "rm:is_open_access": false,
+                    "identifiers": {
+                        "doi": [
+                            "10.1007/978-3-032-11768-7_16"
+                        ],
+                        "orcid_put_cd": [
+                            "202728100"
+                        ]
+                    },
+                    "see_also": [
+                        {
+                            "label": "doi",
+                            "@id": "https://doi.org/10.1007/978-3-032-11768-7_16",
+                            "is_downloadable": false
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/published_papers/49847421",
+                    "@type": "published_papers",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/published_papers",
+                    "rm:id": "49847421",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-04-15T04:31:22Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-10-28T14:26:26Z",
+                    "paper_title": {
+                        "en": "Japanese Calligraphy Artwork Generation System"
+                    },
+                    "authors": {
+                        "en": [
+                            {
+                                "name": "Wakana Kuwata"
+                            },
+                            {
+                                "name": "Ryota Mibayashi"
+                            },
+                            {
+                                "name": "Masanori Tani"
+                            },
+                            {
+                                "name": "Hiroaki Ohshima"
+                            }
+                        ]
+                    },
+                    "published_paper_owner_roles": [
+                        "lead"
+                    ],
+                    "publication_date": "2025-06",
+                    "publication_name": {
+                        "en": "NICOGRAPH International 2025 (NicoInt 2025)"
+                    },
+                    "referee": true,
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/published_papers/46082805",
+                    "@type": "published_papers",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/published_papers",
+                    "rm:id": "46082805",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2024-04-08T15:44:35Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-10-28T14:46:46Z",
+                    "paper_title": {
+                        "en": "Glyph Generation for Japanese Calligraphy based on Encoding both Content and Style"
+                    },
+                    "authors": {
+                        "en": [
+                            {
+                                "name": "Wakana Kuwata"
+                            },
+                            {
+                                "name": "Ryota Mibayashi"
+                            },
+                            {
+                                "name": "Masanori Tani"
+                            },
+                            {
+                                "name": "Hiroaki Ohshima"
+                            }
+                        ]
+                    },
+                    "published_paper_owner_roles": [
+                        "lead"
+                    ],
+                    "publisher": {
+                        "en": "IEEE"
+                    },
+                    "publication_date": "2024-02-18",
+                    "publication_name": {
+                        "en": "Proceedings of the 2024 IEEE International Conference on Big Data and Smart Computing (BigComp 2024)"
+                    },
+                    "starting_page": "207",
+                    "ending_page": "214",
+                    "languages": [
+                        "eng"
+                    ],
+                    "referee": true,
+                    "published_paper_type": "international_conference_proceedings",
+                    "rm:is_open_access": false,
+                    "identifiers": {
+                        "doi": [
+                            "10.1109/bigcomp60711.2024.00040"
+                        ]
+                    },
+                    "see_also": [
+                        {
+                            "label": "doi",
+                            "@id": "https://doi.org/10.1109/bigcomp60711.2024.00040",
+                            "is_downloadable": false
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/published_papers/46082802",
+                    "@type": "published_papers",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/published_papers",
+                    "rm:id": "46082802",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2024-04-08T15:43:10Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2024-04-08T15:43:10Z",
+                    "paper_title": {
+                        "en": "KANDUH at the NTCIR-17 Transfer Task"
+                    },
+                    "authors": {
+                        "en": [
+                            {
+                                "name": "Tomoya Hashiguchi"
+                            },
+                            {
+                                "name": "Ryota Mibayashi"
+                            },
+                            {
+                                "name": "Huu-Long Pham"
+                            },
+                            {
+                                "name": "Wakana Kuwata"
+                            },
+                            {
+                                "name": "Yuka Kawada"
+                            },
+                            {
+                                "name": "Yuya Tsuda"
+                            },
+                            {
+                                "name": "Takehiro Yamamoto"
+                            },
+                            {
+                                "name": "Hiroaki Ohshima"
+                            }
+                        ]
+                    },
+                    "publication_date": "2023-12",
+                    "publication_name": {
+                        "en": "Proceedings of the 17th NTCIR Conference (NTCIR-17)"
+                    },
+                    "starting_page": "332",
+                    "ending_page": "335",
+                    "languages": [
+                        "eng"
+                    ],
+                    "published_paper_type": "international_conference_proceedings",
+                    "rm:is_open_access": true,
+                    "identifiers": {
+                        "doi": [
+                            "10.20736/0002001330"
+                        ]
+                    },
+                    "see_also": [
+                        {
+                            "label": "doi",
+                            "@id": "https://doi.org/10.20736/0002001330",
+                            "is_downloadable": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/wakanakuwata/misc",
+            "@type": "misc",
+            "@reverse": "https://api.researchmap.jp/wakanakuwata",
+            "total_items": 12,
+            "items": [
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/misc/52229968",
+                    "@type": "misc",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/misc",
+                    "rm:id": "52229968",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2026-02-19T05:40:52Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2026-03-03T08:50:41Z",
+                    "paper_title": {
+                        "ja": "衛星画像と異種地理情報の統合に基づくU-Netによる樹冠高推定"
+                    },
+                    "authors": {
+                        "ja": [
+                            {
+                                "name": "内藤 洋輝"
+                            },
+                            {
+                                "name": "桑田若菜"
+                            },
+                            {
+                                "name": "大島裕明"
+                            }
+                        ]
+                    },
+                    "publication_date": "2026-03",
+                    "publication_name": {
+                        "ja": "第18回データ工学と情報マネジメントに関するフォーラム (DEIM 2026)"
+                    },
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/misc/52229961",
+                    "@type": "misc",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/misc",
+                    "rm:id": "52229961",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2026-02-19T05:40:12Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2026-03-03T08:50:31Z",
+                    "paper_title": {
+                        "ja": "画像インペインティングを用いた展示物外観の意外性分析"
+                    },
+                    "authors": {
+                        "ja": [
+                            {
+                                "name": "木下 真帆"
+                            },
+                            {
+                                "name": "桑田若菜"
+                            },
+                            {
+                                "name": "三林亮太"
+                            },
+                            {
+                                "name": "大島裕明"
+                            }
+                        ]
+                    },
+                    "publication_date": "2026-03",
+                    "publication_name": {
+                        "ja": "第18回データ工学と情報マネジメントに関するフォーラム (DEIM 2026)"
+                    },
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/misc/52229947",
+                    "@type": "misc",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/misc",
+                    "rm:id": "52229947",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2026-02-19T05:39:33Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2026-03-03T08:50:20Z",
+                    "paper_title": {
+                        "ja": "DPOを用いた人間の選好フィードバックに基づく手書き文字生成"
+                    },
+                    "authors": {
+                        "ja": [
+                            {
+                                "name": "桑田若菜"
+                            },
+                            {
+                                "name": "三林亮太"
+                            },
+                            {
+                                "name": "谷雅德"
+                            },
+                            {
+                                "name": "大島裕明"
+                            }
+                        ]
+                    },
+                    "published_paper_owner_roles": [
+                        "lead"
+                    ],
+                    "publication_date": "2026-03",
+                    "publication_name": {
+                        "ja": "第18回データ工学と情報マネジメントに関するフォーラム (DEIM 2026)"
+                    },
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/misc/51551120",
+                    "@type": "misc",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/misc",
+                    "rm:id": "51551120",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-10-28T14:36:03Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-11-17T06:58:35Z",
+                    "paper_title": {
+                        "ja": "手書き文字生成とレイアウト予測を基にした書道作品画像生成システム"
+                    },
+                    "authors": {
+                        "ja": [
+                            {
+                                "name": "桑田 若菜"
+                            },
+                            {
+                                "name": "三林 亮太"
+                            },
+                            {
+                                "name": "谷 雅德"
+                            },
+                            {
+                                "name": "大島 裕明"
+                            }
+                        ]
+                    },
+                    "published_paper_owner_roles": [
+                        "lead"
+                    ],
+                    "publication_date": "2025-11",
+                    "publication_name": {
+                        "ja": "情報処理学会 第77回 エンタテインメントコンピューティング研究発表会（SIG-EC）"
+                    },
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/misc/51178067",
+                    "@type": "misc",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/misc",
+                    "rm:id": "51178067",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-09-17T01:27:13Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-09-18T13:32:14Z",
+                    "paper_title": {
+                        "ja": "手書き文字のゆれ表現と自動レイアウトによる書道作品生成"
+                    },
+                    "authors": {
+                        "ja": [
+                            {
+                                "name": "桑田 若菜"
+                            },
+                            {
+                                "name": "三林 亮太"
+                            },
+                            {
+                                "name": "谷 雅德"
+                            },
+                            {
+                                "name": "大島 裕明"
+                            }
+                        ]
+                    },
+                    "published_paper_owner_roles": [
+                        "lead"
+                    ],
+                    "publication_date": "2025-09",
+                    "publication_name": {
+                        "ja": "情報処理学会 第160回 情報基礎とアクセス技術研究会（SIG-IFAT）"
+                    },
+                    "referee": false,
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/misc/49226427",
+                    "@type": "misc",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/misc",
+                    "rm:id": "49226427",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-02-23T11:25:55Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-03-05T03:15:17Z",
+                    "paper_title": {
+                        "ja": "線画特徴の自己教師あり学習による意外な形状の展示物発見"
+                    },
+                    "authors": {
+                        "ja": [
+                            {
+                                "name": "木下 真帆"
+                            },
+                            {
+                                "name": "桑田 若菜"
+                            },
+                            {
+                                "name": "大島 裕明"
+                            }
+                        ]
+                    },
+                    "publication_date": "2025-03",
+                    "publication_name": {
+                        "ja": "第17回データ工学と情報マネジメントに関するフォーラム (DEIM 2025)"
+                    },
+                    "languages": [
+                        "jpn"
+                    ],
+                    "misc_type": "summary_national_conference",
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/misc/49226425",
+                    "@type": "misc",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/misc",
+                    "rm:id": "49226425",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-02-23T11:25:12Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-03-05T03:15:16Z",
+                    "paper_title": {
+                        "ja": "LLaVAを用いた地図画像とテキスト情報の統合的理解"
+                    },
+                    "authors": {
+                        "ja": [
+                            {
+                                "name": "中西 勇輝"
+                            },
+                            {
+                                "name": "橋口 友哉"
+                            },
+                            {
+                                "name": "桑田 若菜"
+                            },
+                            {
+                                "name": "三林 亮太"
+                            },
+                            {
+                                "name": "大島 裕明"
+                            }
+                        ]
+                    },
+                    "publication_date": "2025-03",
+                    "publication_name": {
+                        "ja": "第17回データ工学と情報マネジメントに関するフォーラム (DEIM 2025)"
+                    },
+                    "languages": [
+                        "jpn"
+                    ],
+                    "misc_type": "summary_national_conference",
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/misc/49226424",
+                    "@type": "misc",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/misc",
+                    "rm:id": "49226424",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-02-23T11:22:02Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-03-05T03:15:14Z",
+                    "paper_title": {
+                        "ja": "Diffusionモデルによる文字種とスタイルの特徴を利用した日本語手書き文字生成"
+                    },
+                    "authors": {
+                        "ja": [
+                            {
+                                "name": "桑田 若菜"
+                            },
+                            {
+                                "name": "三林 亮太"
+                            },
+                            {
+                                "name": "谷 雅德"
+                            },
+                            {
+                                "name": "大島 裕明"
+                            }
+                        ]
+                    },
+                    "published_paper_owner_roles": [
+                        "lead"
+                    ],
+                    "publication_date": "2025-03",
+                    "publication_name": {
+                        "ja": "第17回データ工学と情報マネジメントに関するフォーラム (DEIM 2025)"
+                    },
+                    "languages": [
+                        "jpn"
+                    ],
+                    "misc_type": "summary_national_conference",
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/misc/46082752",
+                    "@type": "misc",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/misc",
+                    "rm:id": "46082752",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2024-04-08T15:38:48Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2024-04-24T02:13:48Z",
+                    "paper_title": {
+                        "ja": "授業改善のための意見を引き出すAIインタビュアー"
+                    },
+                    "authors": {
+                        "ja": [
+                            {
+                                "name": "中西 勇輝"
+                            },
+                            {
+                                "name": "桑田 若菜"
+                            },
+                            {
+                                "name": "三林 亮太"
+                            },
+                            {
+                                "name": "山本 祐輔"
+                            },
+                            {
+                                "name": "大島 裕明"
+                            }
+                        ]
+                    },
+                    "publication_date": "2024-03",
+                    "publication_name": {
+                        "ja": "第16回データ工学と情報マネジメントに関するフォーラム (DEIM 2024)"
+                    },
+                    "languages": [
+                        "jpn"
+                    ],
+                    "misc_type": "summary_national_conference",
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/misc/46082734",
+                    "@type": "misc",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/misc",
+                    "rm:id": "46082734",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2024-04-08T15:35:04Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2024-04-08T15:35:04Z",
+                    "paper_title": {
+                        "ja": "複数カメラ映像に跨ったエピソード記憶"
+                    },
+                    "authors": {
+                        "ja": [
+                            {
+                                "name": "桑田 若菜"
+                            },
+                            {
+                                "name": "山崎 智史"
+                            },
+                            {
+                                "name": "劉 健全"
+                            }
+                        ]
+                    },
+                    "published_paper_owner_roles": [
+                        "lead"
+                    ],
+                    "publication_date": "2024-03",
+                    "publication_name": {
+                        "ja": "第16回データ工学と情報マネジメントに関するフォーラム (DEIM 2024)"
+                    },
+                    "languages": [
+                        "jpn"
+                    ],
+                    "misc_type": "summary_national_conference",
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/misc/46082721",
+                    "@type": "misc",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/misc",
+                    "rm:id": "46082721",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2024-04-08T15:30:42Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2024-04-08T15:30:42Z",
+                    "paper_title": {
+                        "ja": "深層距離学習による文字種とスタイルの特徴獲得とその特徴に基づく文字生成"
+                    },
+                    "authors": {
+                        "ja": [
+                            {
+                                "name": "桑田 若菜"
+                            },
+                            {
+                                "name": "三林 亮太"
+                            },
+                            {
+                                "name": "谷 雅德"
+                            },
+                            {
+                                "name": "大島 裕明"
+                            }
+                        ]
+                    },
+                    "published_paper_owner_roles": [
+                        "lead"
+                    ],
+                    "publication_date": "2024-03",
+                    "publication_name": {
+                        "ja": "第16回データ工学と情報マネジメントに関するフォーラム (DEIM 2024)"
+                    },
+                    "languages": [
+                        "jpn"
+                    ],
+                    "misc_type": "summary_national_conference",
+                    "rm:is_open_access": false
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/misc/46082738",
+                    "@type": "misc",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/misc",
+                    "rm:id": "46082738",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2024-04-08T15:36:10Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2024-04-08T15:36:10Z",
+                    "paper_title": {
+                        "ja": "文字種とスタイルを考慮した文字生成による書家俵越山の模倣"
+                    },
+                    "authors": {
+                        "ja": [
+                            {
+                                "name": "桑田 若菜"
+                            },
+                            {
+                                "name": "三林 亮太"
+                            },
+                            {
+                                "name": "谷 雅德"
+                            },
+                            {
+                                "name": "大島 裕明"
+                            }
+                        ]
+                    },
+                    "published_paper_owner_roles": [
+                        "lead"
+                    ],
+                    "publication_date": "2023-03",
+                    "publication_name": {
+                        "ja": "第15回データ工学と情報マネジメントに関するフォーラム (DEIM 2023)"
+                    },
+                    "languages": [
+                        "jpn"
+                    ],
+                    "misc_type": "summary_national_conference",
+                    "rm:is_open_access": false
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/wakanakuwata/association_memberships",
+            "@type": "association_memberships",
+            "@reverse": "https://api.researchmap.jp/wakanakuwata",
+            "total_items": 2,
+            "items": [
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/association_memberships/51155648",
+                    "@type": "association_memberships",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/association_memberships",
+                    "rm:id": "51155648",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2025-09-14T03:30:35Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2025-09-14T03:30:35Z",
+                    "academic_society_name": {
+                        "ja": "情報処理学会"
+                    },
+                    "from_date": "2025-09",
+                    "to_date": "9999"
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/association_memberships/46083104",
+                    "@type": "association_memberships",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/association_memberships",
+                    "rm:id": "46083104",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2024-04-08T16:04:02Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2024-09-18T10:51:52Z",
+                    "academic_society_name": {
+                        "ja": "日本データベース学会"
+                    },
+                    "from_date": "2021",
+                    "to_date": "9999"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/wakanakuwata/academic_contribution",
+            "@type": "academic_contribution",
+            "@reverse": "https://api.researchmap.jp/wakanakuwata",
+            "total_items": 4,
+            "items": [
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/academic_contribution/52308187",
+                    "@type": "academic_contribution",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/academic_contribution",
+                    "rm:id": "52308187",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2026-03-03T09:04:07Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2026-03-03T09:14:09Z",
+                    "academic_contribution_title": {
+                        "ja": "DEIM2026 BoF DBSJ学生企画第十七弾「研究ライフをN倍ブチ上げるためにキミたちはどうしますか」"
+                    },
+                    "academic_contribution_roles": [
+                        "planning_etc"
+                    ],
+                    "promoter": {
+                        "ja": "袁 欣綺, 桑田 若菜, 田貝 奈央, 森部 想水, 吉丸 直希"
+                    },
+                    "from_event_date": "2026-03-04",
+                    "see_also": [
+                        {
+                            "@id": "https://pub.confit.atlas.jp/ja/event/deim2026/content/bof",
+                            "label": "url"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/academic_contribution/52308196",
+                    "@type": "academic_contribution",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/academic_contribution",
+                    "rm:id": "52308196",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2026-03-03T09:05:58Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2026-03-03T09:10:30Z",
+                    "academic_contribution_title": {
+                        "ja": "DBSJ学生企画第十六弾「進学？就職？研究？起業？ ― 多様なキャリアから学ぶ現代の就活術 ―」"
+                    },
+                    "academic_contribution_roles": [
+                        "planning_etc"
+                    ],
+                    "promoter": {
+                        "ja": "袁 欣綺, 桑田 若菜, 田貝 奈央, 森部 想水, 吉丸 直希"
+                    },
+                    "from_event_date": "2025-11-21",
+                    "see_also": [
+                        {
+                            "@id": "https://dbsj.org/events/event_info/event_20251121/",
+                            "label": "url"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/academic_contribution/52308166",
+                    "@type": "academic_contribution",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/academic_contribution",
+                    "rm:id": "52308166",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2026-03-03T08:59:13Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2026-03-03T09:04:40Z",
+                    "academic_contribution_title": {
+                        "ja": "DEIM2025 BoF DBSJ学生企画第十五弾「DB談話室 〜研究者としての生活の「リアル」〜」"
+                    },
+                    "academic_contribution_roles": [
+                        "planning_etc"
+                    ],
+                    "promoter": {
+                        "ja": "袁 欣綺, 大塚 智貴, 木村 元紀, 桑田 若菜, 桑村 真生, 吉丸 直希"
+                    },
+                    "from_event_date": "2025-03-03",
+                    "see_also": [
+                        {
+                            "@id": "https://pub.confit.atlas.jp/ja/event/deim2025/content/bof",
+                            "label": "url"
+                        }
+                    ]
+                },
+                {
+                    "@id": "https://api.researchmap.jp/wakanakuwata/academic_contribution/52308205",
+                    "@type": "academic_contribution",
+                    "@reverse": "https://api.researchmap.jp/wakanakuwata/academic_contribution",
+                    "rm:id": "52308205",
+                    "rm:user_id": "R000066160",
+                    "display": "disclosed",
+                    "major_achievement": false,
+                    "rm:creator_id": "R000066160",
+                    "rm:creator_type": "myself",
+                    "rm:created": "2026-03-03T09:08:15Z",
+                    "rm:modifier_id": "R000066160",
+                    "rm:modifier_type": "myself",
+                    "rm:modified": "2026-03-03T09:08:31Z",
+                    "academic_contribution_title": {
+                        "ja": "DBSJ学生企画第十四弾「LayerX 松村さんに聞く！ 〜LLM活用の現在と未来：LayerXの事例紹介〜」"
+                    },
+                    "academic_contribution_roles": [
+                        "planning_etc"
+                    ],
+                    "promoter": {
+                        "ja": "袁 欣綺, 大塚 智貴, 木村 元紀, 桑田 若菜, 桑村 真生, 吉丸 直希"
+                    },
+                    "from_event_date": "2025-01-22",
+                    "see_also": [
+                        {
+                            "@id": "https://dbsj.org/events/event_info/event_20250122/",
+                            "label": "url"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
